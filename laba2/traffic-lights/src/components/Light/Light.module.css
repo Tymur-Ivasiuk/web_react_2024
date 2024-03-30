@@ -1,0 +1,9 @@
+.light {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    border-radius: 50%;
+    border: 2px solid #000;
+    aspect-ratio: 1 / 1;
+}
