@@ -1,3 +1,8 @@
+.traffic_light_list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 100px;
+}
 .traffic_light_wrapper {
     display: flex;
     gap: 30px;

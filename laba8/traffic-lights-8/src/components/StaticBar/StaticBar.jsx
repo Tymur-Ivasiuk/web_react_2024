@@ -8,7 +8,7 @@ const StaticBar = (props) => {
                 Change rotation
             </button>
             <div className={s.stat_bar + ' ' + (props.gorizontal ? s.gorizontal : s.vertical)}>
-                {props.TrafficLightsData.map(lightItem => (
+                {props.TrafficLightsData.light.map(lightItem => (
                     <div>
                         {lightItem.description} - {lightItem.clickcount}
                     </div>

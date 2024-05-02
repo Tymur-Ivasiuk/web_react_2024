@@ -1,0 +1,52 @@
+{
+  "trafficLights": [
+    {
+      "id": "1",
+      "light": [
+        {
+          "id": "1",
+          "color": "red",
+          "description": "Червоний",
+          "clickcount": 10
+        },
+        {
+          "id": "2",
+          "color": "yellow",
+          "description": "Жовтий",
+          "clickcount": 9
+        },
+        {
+          "id": "3",
+          "color": "green",
+          "description": "Зелений",
+          "clickcount": 6
+        }
+      ],
+      "activeLight": "1"
+    },
+    {
+      "id": "2",
+      "light": [
+        {
+          "id": "1",
+          "color": "red",
+          "description": "Червоний",
+          "clickcount": 0
+        },
+        {
+          "id": "2",
+          "color": "yellow",
+          "description": "Жовтий",
+          "clickcount": 3
+        },
+        {
+          "id": "3",
+          "color": "green",
+          "description": "Зелений",
+          "clickcount": 3
+        }
+      ],
+      "activeLight": "3"
+    }
+  ]
+}
