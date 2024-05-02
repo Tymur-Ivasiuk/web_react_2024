@@ -1,0 +1,31 @@
+.stat_bar_wrapper {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+
+    row-gap: 20px;
+    column-gap: 16px;
+    background: #dbdbdb;
+    border-radius: 10px;
+    border: 4px solid #000;
+    justify-content: space-between;
+    max-width: fit-content;
+}
+
+.stat_bar_wrapper > button {
+    background: #fff;
+    border: 2px solid #000;
+    border-radius: 4px;
+    padding: 4px 10px;
+    transition: 0.3s ease;
+}
+.stat_bar_wrapper > button:hover {
+    background: #000;
+    color: #fff;
+}
+
+.stat_bar {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}

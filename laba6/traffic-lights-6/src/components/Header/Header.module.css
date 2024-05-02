@@ -1,0 +1,24 @@
+.header {
+    width: 100%;
+    background: #000;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+    margin-bottom: 30px;
+}
+
+.header_link {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 8px 14px;
+    border: 1px solid #fff;
+    border-radius: 6px;
+    transition: .3s ease;
+    text-decoration: none;
+}
+.header_link_active {
+    background: #fff;
+    color: #000;
+}
