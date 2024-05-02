@@ -1,13 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client.js';
 import './index.css';
-import App from './App.js';
 import RootPage from './Pages/RootPage/RootPage.jsx';
 import Home from './Pages/Home/Home.jsx';
 import ErrorPage from './Pages/ErrorPage/ErrorPage.jsx';
 import reportWebVitals from './reportWebVitals.js';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import TrafficLights from './components/TrafficLight/TrafficLight.jsx';
+import { TrafficLightsProvider } from './context/LightContext.jsx';
 
 const router = createBrowserRouter([
   {
@@ -31,7 +31,9 @@ const router = createBrowserRouter([
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <RouterProvider router={router}/>
+    <TrafficLightsProvider>
+      <RouterProvider router={router}/>
+    </TrafficLightsProvider>      
   </React.StrictMode>
 );
 
