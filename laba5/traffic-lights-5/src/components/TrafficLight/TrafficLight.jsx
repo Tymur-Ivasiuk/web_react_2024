@@ -5,6 +5,7 @@ import s from "./TrafficLight.module.css";
 
 
 const TrafficLights = (props) => {
+    const [rotation, setRotation] = useState(Boolean(props.gorizontal))
     const [TrafficLightsData, setTrafficLightsData] = useState([
         {
             id: 1,
@@ -37,16 +38,20 @@ const TrafficLights = (props) => {
         setTrafficLightsData(updatedTrafficLightsData);
     }
 
+    const clickRotation = () => {
+        setRotation(!rotation)
+    }
+
     return (
-        <div>
+        <div className={s.traffic_light_wrapper}>
             <div 
-                className={s.traffic_light + ' ' + (props.gorizontal ? s.gorizontal : s.vertical)} >
+                className={s.traffic_light + ' ' + (rotation ? s.gorizontal : s.vertical)} >
                 {TrafficLightsData.map(lightItem => (
                     <Light lightItem={lightItem} clickLight={clickLight} />
                 ))}
             </div>
             <div className="staticbar">
-                <StaticBar TrafficLightsData={TrafficLightsData} gorizontal="1"/>
+                <StaticBar TrafficLightsData={TrafficLightsData} clickRotation={clickRotation}/>
             </div>
         </div>
     );

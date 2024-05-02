@@ -1,5 +1,14 @@
+.traffic_light_wrapper {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
 .traffic_light {
     display: flex;
+    width: fit-content;
     
     gap: 20px;
     padding: 20px;

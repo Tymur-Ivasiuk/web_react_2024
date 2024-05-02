@@ -2,12 +2,40 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
+import RootPage from './Pages/RootPage/RootPage.jsx';
+import Home from './Pages/Home/Home';
+import ErrorPage from './Pages/ErrorPage/ErrorPage';
 import reportWebVitals from './reportWebVitals';
+import { RouterProvider, createBrowserRouter } from 'react-router-dom';
+import TrafficLights from './components/TrafficLight/TrafficLight';
+
+const router = createBrowserRouter([
+  {
+    path: '/',
+    element: <RootPage />,
+    errorElement: <ErrorPage />,
+    children: [
+      {
+        path: '/',
+        element: <Home />,
+      },
+      {
+        path: '/trafic-light-gorizontal',
+        element: <TrafficLights gorizontal={true}/>,
+      },
+      {
+        path: '/trafic-light-vertical',
+        element: <TrafficLights />,
+      },
+    ]
+  },
+
+])
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <RouterProvider router={router}/>
   </React.StrictMode>
 );
 

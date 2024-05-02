@@ -5,7 +5,12 @@ const App = () => {
   
   return (
     <div className="App">
-      <TrafficLight gorizontal="1"/>
+      {/* <Routes>
+        <Route path='/trafic-light-vertical' element={}/>
+        <Route path='/trafic-light-gorizontal' element={<TrafficLight gorizontal="1" />}/>
+
+      </Routes> */}
+      <TrafficLight />
     </div>
   );
 }
