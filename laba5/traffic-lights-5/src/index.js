@@ -20,13 +20,9 @@ const router = createBrowserRouter([
         element: <Home />,
       },
       {
-        path: '/trafic-light-gorizontal',
-        element: <TrafficLights gorizontal={true}/>,
-      },
-      {
-        path: '/trafic-light-vertical',
+        path: '/traffic-light/:direction',
         element: <TrafficLights />,
-      },
+      }
     ]
   },
 

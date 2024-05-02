@@ -13,7 +13,7 @@ const Header = (props) => {
             }>
                 Home
             </NavLink>
-            <NavLink to={"/trafic-light-gorizontal"} reloadDocument className={({ isActive }) =>
+            <NavLink to={"/traffic-light/gorizontal"} reloadDocument className={({ isActive }) =>
                 [
                     isActive ? s.header_link_active : "",
                     s.header_link
@@ -21,7 +21,7 @@ const Header = (props) => {
             }>
                 Traffic Light Gorizontal
             </NavLink>
-            <NavLink to={"/trafic-light-vertical"} reloadDocument className={({ isActive }) =>
+            <NavLink to={"/traffic-light/vertical"} reloadDocument className={({ isActive }) =>
                 [
                     isActive ? s.header_link_active : "",
                     s.header_link

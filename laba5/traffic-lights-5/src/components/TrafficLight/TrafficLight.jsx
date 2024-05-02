@@ -2,10 +2,14 @@ import React, { useState, useEffect } from 'react';
 import Light from "../Light/Light.jsx";
 import StaticBar from '../StaticBar/StaticBar.jsx';
 import s from "./TrafficLight.module.css";
+import { useParams } from 'react-router-dom';
 
 
 const TrafficLights = (props) => {
-    const [rotation, setRotation] = useState(Boolean(props.gorizontal))
+    const params = useParams()
+    const [rotation, setRotation] = useState(params.direction == "gorizontal" ? true : false)
+
+
     const [TrafficLightsData, setTrafficLightsData] = useState([
         {
             id: 1,
