@@ -13,6 +13,6 @@ code {
 }
 
 body * {
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
   box-sizing: border-box;
 }

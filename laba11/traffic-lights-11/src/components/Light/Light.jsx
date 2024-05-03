@@ -11,7 +11,7 @@ const Light = (props) => {
         transition={{ duration: 0.1 }}
         whileTap={{ scale: 0.8 }}
         whileHover={{ scale: 0.9 }}
-        onClick={() => {props.clickLight(props.trafficLightId, props.lightItem.id)}}
+        onClick={() => {props.clickLight(props.lightItem.id)}}
       >
         {/* {props.lightItem.clickcount} */}
     </motion.div>
